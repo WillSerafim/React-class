@@ -20,11 +20,13 @@
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
 
-    <script>
-        const container = document.getElementById('root');
-        ReactDOM.render(
-            React.createElement('h1', null, 'Aquiiiii'),
-            container
-        );
+    <script type="text/jsx">
+    const container = document.querySelector('#root');
+    const yourName = 'Will';
+
+    ReactDOM.render(
+        <h1>Hello World, {yourName}</h1>,
+        container
+    );
     </script>
 </html>
